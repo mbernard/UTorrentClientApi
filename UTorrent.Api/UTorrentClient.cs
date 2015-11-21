@@ -348,7 +348,7 @@ namespace UTorrent.Api
         public Response DeleteTorrent(string hash)
         {
             Contract.Requires(hash != null);
-            return ActionTorrent(UrlAction.RemoveDataTorrent, hash);
+            return ActionTorrent(UrlAction.RemoveData, hash);
         }
 
         /// <summary>
